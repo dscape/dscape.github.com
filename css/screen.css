@@ -17,7 +17,7 @@ blockquote { margin: 1em 3em; color: #999; border-left: 2px solid #999; padding-
 /* posts */
 ul.posts { list-style-type: none; margin-bottom: 2em; }
   ul.posts li { line-height: 1.75em; }
-  ul.posts span{ color: #09C; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1em; font-style: italic; }
+  ul.posts span{ color: #FFF; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1em; font-style: italic; }
 /* site */
 .site { font-size: 110%; text-align: left; width: 40em; margin: 3em auto 2em auto; line-height: 1.5em; }
   .title { color: #036; font-weight: bold; margin-bottom: 2em; }
