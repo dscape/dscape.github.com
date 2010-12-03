@@ -1,93 +1,21 @@
-
-/*****************************************************************************/
-/*
-/* Common
-/*   credit: http://github.com/videlalvaro
-/*****************************************************************************/
-
-/* Global Reset */
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  height: 100%;
-}
-
-img {
-  border: 0;
-}
-
-img.floatright {
-  float: right;
-  margin-left: 10px;
-}
-
-img.floatleft {
-  float: left;
-  margin-right: 10px;
-}
-
-body {
-  background-color: #0A8EBC;
-  font: 13.34px "helvetica neue", helvetica, arial, clean, sans-serif;
-  *font-size: small;
-  text-align: center; 
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-}
-
-h1 {
-  font-size: 2.1em;
-  margin: 1.5em 0 1em -.5em;
-}
-
-p {
-  margin: 1em 0;
-}
-
-a:link,
-a:visited {
-  color: #003366;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #FFBB22;
-}
-
-
-table {
-  font-size: inherit;
-  font: 100%;
-}
-
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-
-ul.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
-}
-
-  ul.posts li {
-    line-height: 1.75em;
-  }
-
-  ul.posts span{
-    color: #DEF;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1em;
-    font-style: italic;
-  }
-
+/* credit: http://github.com/videlalvaro */
+* { margin: 0; padding: 0; }
+html, body { height: 100%; }
+img { border: 0; }
+img.floatright { float: right; margin-left: 10px; }
+img.floatleft { float: left; margin-right: 10px; }
+body { background-color: #36f; font: 12px "Helvetica Neue", helvetica, arial, clean, sans-serif;
+  *font-size: small; text-align: center;  }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+h1 { font-size: 2.1em; margin: 1.5em 0 1em -.5em; }
+p { margin: 1em 0; }
+a:link, a:visited { color: #036; text-decoration: none; }
+a:hover { color: #FB2; }
+table { font-size: inherit; font: 100%; }
+/* sections */
+ul.posts { list-style-type: none; margin-bottom: 2em; }
+  ul.posts li { line-height: 1.75em; }
+  ul.posts span{ color: #DEF; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1em; font-style: italic; }
 
 /*****************************************************************************/
 /*
