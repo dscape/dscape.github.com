@@ -7,10 +7,10 @@ img.floatleft { float: left; margin-right: 10px; }
 body { background-color: #9cf; font: 14px "Helvetica Neue", helvetica, arial, clean, sans-serif;
   *font-size: small; text-align: center;  }
 h1, h2, h3, h4, h5, h6 { font-size: 100%; }
-h1 { font-size: 2.1em; margin: 1.5em 0 1em -.5em; color: #FB2; }
+h1 { font-size: 2.1em; margin: 1.5em 0 1em -.5em; color: #09C; }
 p { margin: 1em 0; }
 a:link, a:visited { color: #036; text-decoration: none; }
-a:hover { color: #FB2; }
+a:hover { color: #09C; }
 table { font-size: inherit; font: 100%; }
 img { max-width: 40em; }
 blockquote { margin: 1em 3em; color: #999; border-left: 2px solid #999; padding-left: 1em; }
@@ -22,9 +22,9 @@ ul.posts { list-style-type: none; margin-bottom: 2em; }
 .site { font-size: 110%; text-align: left; width: 40em; margin: 3em auto 2em auto; line-height: 1.5em; }
   .title { color: #036; font-weight: bold; margin-bottom: 2em; }
 .site .title a:link,.site .title a:visited { color: #036; text-decoration: none; font-size: 4em; margin-left: -.5em; }
-.site .title a:hover { color: #FB2; }
-.site .title a.extra { color: #FB2; text-decoration: none; margin-left: 1em; font-size: 75%;}
-.site .title a.extra:hover { color: #DEF; }
+.site .title a:hover { color: #09C; }
+.site .title a.extra { color: #09C; text-decoration: none; margin-left: 1em; font-size: 75%;}
+.site .title a.extra:hover { color: #FB2; }
 .site .meta { color: #DEF; font-style: italic; }
 .site .footer { font-size: 80%; color: #def; border-top: 1px solid #FB2; margin-top: 2em; overflow: hidden; }
 .site .footer .contact { float: left; margin-right: 3em; }
