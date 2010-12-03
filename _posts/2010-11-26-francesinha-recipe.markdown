@@ -15,7 +15,7 @@ when onions are golden add tomatoes (many) add 2 bay leaves, beer, one chili pep
 Choose either a chicken, beef or porf steak. Either is fine and works.
 Grill it or fry, you choose. Reserve to the side.
 
-Get a Portuguese ![Linguiça](http://www.foodsubs.com/MeatcureSausage.html)
+Get a Portuguese [Linguiça](http://www.foodsubs.com/MeatcureSausage.html)
 Fry it, maybe with just a little bit of soya sauce, reserve it near the steak.
 
 Get a sausage of your preference. Fresh or wiener, either is used.
