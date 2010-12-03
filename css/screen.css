@@ -4,7 +4,7 @@ html, body { height: 100%; }
 img { border: 0; }
 img.floatright { float: right; margin-left: 10px; }
 img.floatleft { float: left; margin-right: 10px; }
-body { background-color: #0A8EBC; font: 12px "Helvetica Neue", helvetica, arial, clean, sans-serif;
+body { background-color: #0A8EBC; font: 14px "Helvetica Neue", helvetica, arial, clean, sans-serif;
   *font-size: small; text-align: center;  }
 h1, h2, h3, h4, h5, h6 { font-size: 100%; }
 h1 { font-size: 2.1em; margin: 1.5em 0 1em -.5em; }
@@ -12,53 +12,17 @@ p { margin: 1em 0; }
 a:link, a:visited { color: #036; text-decoration: none; }
 a:hover { color: #FB2; }
 table { font-size: inherit; font: 100%; }
-/* sections */
+/* posts */
 ul.posts { list-style-type: none; margin-bottom: 2em; }
   ul.posts li { line-height: 1.75em; }
   ul.posts span{ color: #DEF; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1em; font-style: italic; }
-
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
-.site {
-  font-size: 110%;
-  text-align: left;
-  width: 40em;
-  margin: 3em auto 2em auto;
-  line-height: 1.5em;
-}
-
-.title {
-  color: #003366;
-  font-weight: bold;
-  margin-bottom: 2em;
-}
-
-  .site .title a:link,
-  .site .title a:visited {
-    color: #003366;
-    text-decoration: none;
-    font-size: 4em;
-    margin-left: -.5em;
-  }
-  
-  .site .title a:hover {
-    color: #FFBB22;
-  }
-
-  .site .title a.extra {
-    color: #aaa;
-    text-decoration: none;
-    margin-left: 1em;
-  }
-  
-  .site .title a.extra:hover {
-    color: black;
-  }
+/* site */
+.site { font-size: 110%; text-align: left; width: 40em; margin: 3em auto 2em auto; line-height: 1.5em; }
+  .title { color: #036; font-weight: bold; margin-bottom: 2em; }
+.site .title a:link,.site .title a:visited { color: #036; text-decoration: none; font-size: 4em; margin-left: -.5em; }
+.site .title a:hover { color: #FB2; }
+.site .title a.extra { color: #aaa; text-decoration: none; margin-left: 1em; }
+.site .title a.extra:hover { color: black; }
 
   .site .meta {
     color: #DEF;
