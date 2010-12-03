@@ -82,7 +82,7 @@ ul.posts {
   }
 
   ul.posts span{
-    color: #666;
+    color: #DEF;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em;
     font-style: italic;
@@ -132,13 +132,13 @@ ul.posts {
   }
 
   .site .meta {
-    color: #666;
+    color: #DEF;
     font-style: italic;
   }
 
   .site .footer {
     font-size: 80%;
-    color: #666;
+    color: #DEF;
     border-top: 4px solid #eee;
     margin-top: 2em;
     overflow: hidden;
