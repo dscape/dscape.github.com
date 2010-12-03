@@ -7,7 +7,7 @@ img.floatleft { float: left; margin-right: 10px; }
 body { background-color: #0A8EBC; font: 14px "Helvetica Neue", helvetica, arial, clean, sans-serif;
   *font-size: small; text-align: center;  }
 h1, h2, h3, h4, h5, h6 { font-size: 100%; }
-h1 { font-size: 2.1em; margin: 1.5em 0 1em -.5em; }
+h1 { font-size: 2.1em; margin: 1.5em 0 1em -.5em; color: #FB2; }
 p { margin: 1em 0; }
 a:link, a:visited { color: #036; text-decoration: none; }
 a:hover { color: #FB2; }
