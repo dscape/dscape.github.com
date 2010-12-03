@@ -52,7 +52,7 @@ p {
 
 a:link,
 a:visited {
-  color: #006A7F;
+  color: #003366;
   text-decoration: none;
 }
 
@@ -111,7 +111,7 @@ ul.posts {
 
   .site .title a:link,
   .site .title a:visited {
-    color: #006A7F;
+    color: #003366;
     text-decoration: none;
     font-size: 4em;
     margin-left: -.5em;
