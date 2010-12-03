@@ -21,7 +21,7 @@ ul.posts { list-style-type: none; margin-bottom: 2em; }
   .title { color: #036; font-weight: bold; margin-bottom: 2em; }
 .site .title a:link,.site .title a:visited { color: #036; text-decoration: none; font-size: 4em; margin-left: -.5em; }
 .site .title a:hover { color: #FB2; }
-.site .title a.extra { color: #aaa; text-decoration: none; margin-left: 1em; }
+.site .title a.extra { color: #aaa; text-decoration: none; margin-left: 1em; font-size: 75%;}
 .site .title a.extra:hover { color: black; }
 
   .site .meta {
