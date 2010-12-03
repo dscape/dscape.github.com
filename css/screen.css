@@ -4,7 +4,7 @@ html, body { height: 100%; }
 img { border: 0; }
 img.floatright { float: right; margin-left: 10px; }
 img.floatleft { float: left; margin-right: 10px; }
-body { background-color: #99c; font: 14px "Helvetica Neue", helvetica, arial, clean, sans-serif;
+body { background-color: #9cf; font: 14px "Helvetica Neue", helvetica, arial, clean, sans-serif;
   *font-size: small; text-align: center;  }
 h1, h2, h3, h4, h5, h6 { font-size: 100%; }
 h1 { font-size: 2.1em; margin: 1.5em 0 1em -.5em; color: #FB2; }
