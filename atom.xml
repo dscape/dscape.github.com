@@ -7,17 +7,17 @@ layout: nil
  <link href="http://dscape.github.com/atom.xml" rel="self"/>
  <link href="http://dscape.github.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://dscape.github.com/</id>
+ <id>http://blog.nunojob.com/</id>
  <author>
    <name>Nuno Job</name>
-   <email>nunojobpinto@gmail.com</email>
+   <email>nuno@dscape.org</email>
  </author>
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://dscape.github.com{{ post.url }}"/>
+   <link href="http://blog.nunojob.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://dscape.github.com{{ post.id }}</id>
+   <id>http://blog.nunojob.com{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
