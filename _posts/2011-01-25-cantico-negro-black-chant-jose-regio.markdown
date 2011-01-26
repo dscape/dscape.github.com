@@ -3,6 +3,7 @@ layout: post
 title:  Cântico negro (Black Chant) - José Régio
 ---
 
+#Cântico negro (Black Chant) - José Régio
 José Régio is a portuguese poet. This is one of my favorites poems.
 
 "come this way" — some say with sweet eyes
@@ -63,6 +64,7 @@ I don't know where I'm going to,
 - I know I'm not going that way!
 
 Original version (Portuguese):
+
 * [Text](http://www.releituras.com/jregio_cantico.asp)
 * [Audio](http://www.youtube.com/watch?v=qKyWRJZnu2o)
 
