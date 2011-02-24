@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lost in Recursion - Generate XML from key valye pairs (HTML Form)
+title: Lost in Recursion - Generate XML from key value pairs (HTML Form)
 ---
 # Lost in Recursion - Generate XML from key value pairs (HTML Form)
 ## Meta
