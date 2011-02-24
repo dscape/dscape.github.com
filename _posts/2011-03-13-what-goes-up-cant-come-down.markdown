@@ -5,7 +5,7 @@ title:  What goes up can't come down? Thoughts on Innovation
 
 # What goes up can't come down?
 
-I would call this my personal summary of the "Innovators Dilemma", a booked I've recently read.
+I would call this my personal summary of the "Innovators Dilemma", a book I've recently read.
 
 On a recent conversation some asked "So, what goes up and can't come down"? "Fuel prices, right?". 
 
