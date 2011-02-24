@@ -15,7 +15,7 @@ While this isn't particularly funny it made me think about why despite fluctuati
 
 In a company like BP or Mobil you are indeed expected to "always go up and never go down". And to make the forecast come true you have to focus on opportunities that allow you to reach the projected growth - if you are a 200M/year company and forecast a yearly growth of 10% you have to make extra 20M to reach those projections. Failing to do so in a public company can be catastrophic - even good companies with excellent track records can fail after two successive bad quarters. At the very least it can impact their business which impacts their ability to remain competitive.
 
-While this might seem perfect to the capitalist in you it really isn't. Simply because there isn't such thing as perpetual growth. Basic intuition tell you that everything that goes up does come down. It might take less or more but one thing our world seems to be pretty good at is renewing itself. We all know the higher you go the higher you can fall.
+While this might seem perfect to the capitalist in you it really isn't. Simply because there isn't such thing as perpetual growth. Basic intuition tell you that everything that goes up does come down. It might take more or less time but one thing our world seems to be pretty good at is renewing itself. We all know the higher you go the higher you can fall.
 
 ![Totally made up graph](https://img.skitch.com/20110224-8c12hhm7es4ftwjj4giaq6fxgj.jpg)
 
@@ -36,8 +36,6 @@ When new energy alternatives replace oil in mainstream markets and your customer
 But can one prevent this? Studies suggest that the most efficient approach is to create independent organizations that operate exclusively in the new emerging markets. This way when the old market and new market meet in terms of revenue the independent organization can take over and it's revenue stream can keep the parent organization alive while restructuring happens. All without loosing your mainstream market leadership. 
 
 If you have enough money you can do what IBM, Oracle and Google do and buy anything that has a pulse so they never make you fail.
-
-A final note to some of the smartest people I know: 
 
 When looking at teams/companies that are not making profit or any measurable gain you have to understand that measure and mathematics only takes you so far. The only thing that is predictable are the things you already know. Innovation, by definition, isn't. 
 
