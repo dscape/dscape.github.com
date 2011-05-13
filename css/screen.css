@@ -4,7 +4,7 @@ h1         { font-size: 1.5em; margin-top: 1.5em; }
 ul         { padding: 0; }
 ul li      { list-style-type: none; }
 code       { font-family: 'Inconsolata', Courier, serif; color: #063; }
-blockquote { font-family: 'Tangerine', Times, serif;} 
+blockquote p { font-family: 'Tangerine', Times, serif;} 
 a:hover    { color: #036; }
 a:link, a:visited { color: #000; }
 .rss a, .title a            { text-decoration: none ; }
