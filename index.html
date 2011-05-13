@@ -6,12 +6,16 @@ title: Welcome!
   <h1>Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><a href="{{ post.url }}">{{ post.title }}</a>, <span>{{ post.date | date_to_long_string }}</span></li>
     {% endfor %}
   </ul>  
-  <h1>Articles, Talks, Etc</h1>
+  <h1>Articles, Talks, Etc...</h1>
   <ul class="posts">
-    <li><span>Jun 2011</span> <a href="http://opensourcebridge.org/proposals/524">No More Joins</a></li>
+    <li>
+      <a href="http://opensourcebridge.org/proposals/524">
+        No More Joins
+      </a>, <span>June 2011</span>
+    </li>
     <li><span>Jun 2011</span> <a href="http://www.berlinbuzzwords.de/content/program">Transactions at the PB Scale with MarkLogic Server</a></li>
     <li><span>Apr 2011</span> <a href="http://developer.marklogic.com/events/mluc11-labs-and-lounge-schedule">Templating with Mustache</a></li>
     <li><span>Apr 2011</span> <a href="http://developer.marklogic.com/events/mluc11-labs-and-lounge-schedule">MarkLogic in a Nut-shell</a></li>
