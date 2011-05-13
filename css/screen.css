@@ -1,43 +1,16 @@
-/* credit: http://github.com/videlalvaro */
-* { margin: 0; padding: 0; }
-html, body { height: 100%; }
-img { border: 0; }
-img.floatright { float: right; margin-left: 10px; }
-img.floatleft { float: left; margin-right: 10px; }
-body { background-color: #9cf; font: 14px "Helvetica Neue", helvetica, arial, clean, sans-serif;
-  *font-size: small; text-align: center;  }
-h1, h2, h3, h4, h5, h6 { font-size: 100%; }
-h1 { font-size: 2.1em; margin: 1.5em 0 1em -.5em; color: #09C; }
-p { margin: 1em 0; }
-a:link, a:visited { color: #036; text-decoration: none; }
-a:hover { color: #09C; }
-table { font-size: inherit; font: 100%; }
-img { max-width: 40em; }
-blockquote { margin: 1em 3em; color: #999; border-left: 2px solid #999; padding-left: 1em; }
-/* posts */
-ul.posts { list-style-type: none; margin-bottom: 2em; }
-  ul.posts li { line-height: 1.75em; }
-  ul.posts span{ color: #FFF; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1em; font-style: italic; }
-/* site */
-.site { font-size: 110%; text-align: left; width: 40em; margin: 3em auto 2em auto; line-height: 1.5em; }
-  .title { color: #036; font-weight: bold; margin-bottom: 2em; }
-.site .title a:link,.site .title a:visited { color: #036; text-decoration: none; font-size: 4em; margin-left: -.5em; }
-.site .title a:hover { color: #09C; }
-.site .title a.extra { color: #09C; text-decoration: none; margin-left: 1em; font-size: 75%;}
-.site .title a.extra:hover { color: #FB2; }
-.site .meta { color: #DEF; font-style: italic; }
-.site .footer { font-size: 80%; color: #def; border-top: 1px solid #FB2; margin-top: 2em; overflow: hidden; }
-.site .footer .contact { float: left; margin-right: 3em; color: #036; }
-.site .footer .rss { margin-top: 1.1em; margin-right: 0em; float: right; }
-.site .footer .rss img { border: 0; }
-/* posts */
-#post { }
-  #post pre { padding: 0 .4em; border: none; }
-  #post code { background-color: #def; font-size: 95%; padding: 0 .2em; }
-  #post pre code { border: none; }
-  #post pre.terminal { border: 1px solid black; background-color: #333; color: white; }
-  #post pre.terminal code { background-color: #333; }
-  #post ul { margin-left: 1em; }
-#related { margin-top: 2em; }
-  #related h2 { margin-bottom: 1em; }
-#elsewhere { width: 340px; }
+body     { line-height: 1.5em ; margin: 100px 0 0 75px ;
+  font-family: 'Cardo', Times, serif ; font-size: 18pt ; }
+h1       { font-size: 1.5em; margin-top: 1.5em; }
+ul       { padding: 0; }
+ul li    { list-style-type: none; }
+a:link, a:visited { color: #000; }
+a:hover  { color: #036; }
+.rss a, .title a { text-decoration: none ; }
+.site .title     { font-family: 'Special Elite', Times, serif;
+  font-size: 3em; margin-bottom: 1em; }
+.footer { margin-top: 2em; }
+.rss { font-family: 'Pacifico', arial, serif; margin-right: 1.5em;
+  margin-bottom: 1em; text-align: right; font-size: 1.5em; }
+.rss a:link, .rss a:visited { color: #603 ; }
+.rss a:hover { color: #036; }
+a.extra:hover { color: #f00; }
