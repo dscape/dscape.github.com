@@ -1,17 +1,17 @@
 /* thank you jan.io and lexadecimal.com for inspiration */
 body       { line-height: 1.5em ; margin: 100px 0 0 75px ;
-  font-family: 'Crimson Text', Times, serif ; font-size: 18pt ; }
+             font-family: 'Crimson Text', Times, serif ; font-size: 18pt ; }
 h1         { font-size: 1.5em; margin-top: 1.5em; }
 ul         { padding: 0; }
 ul li      { list-style-type: none; }
 code       { font-family: 'Inconsolata', Courier, serif; color: #bada55; } 
 a:hover    { color: #00f; }
-a:link, a:visited           { color: #000; }
-.rss a, .title a            { text-decoration: none ; }
+a:link, a:visited { color: #000; }
+.rss a, .title a  { text-decoration: none ; }
 .title        { font-family: 'Special Elite', Times, serif;
-  font-size: 3em; margin-bottom: 1em; }
+                font-size: 3em; margin-bottom: 1em; }
 .footer       { margin-top: 2em; }
-a.extra       { color: #f00; }
-.rss a        { color: #f00 ; }
+a .extra      { color: #f00; }
+.rss a        { color: #036 ; }
 .rss          { font-family: 'Pacifico', arial, serif; margin-right: 1.2em;
-  margin-bottom: 1em; text-align: right; font-size: 1.2em; }
+                margin-bottom: 1em; text-align: right; font-size: 1.2em; }
