@@ -9,8 +9,8 @@ a:hover  { color: #036; }
 .site .title     { font-family: 'Special Elite', Times, serif;
   font-size: 3em; margin-bottom: 1em; }
 .footer { margin-top: 2em; }
-.rss { font-family: 'Pacifico', arial, serif; margin-right: 1.5em;
-  margin-bottom: 1em; text-align: right; font-size: 1.5em; }
+.rss { font-family: 'Pacifico', arial, serif; margin-right: 1.2em;
+  margin-bottom: 1em; text-align: right; font-size: 1.2em; }
 .rss a:link, .rss a:visited { color: #603 ; }
 .rss a:hover { color: #036; }
 a.extra:hover { color: #f00; }
