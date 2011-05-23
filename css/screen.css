@@ -12,6 +12,7 @@ a:link, a:visited { color: #000; }
 .links        { padding: 1em; }
 .footer       { margin-top: 2em; }
 a.extra       { color: #f00; }
+.disqus       { padding: 0.5em; }
 .rss a        { color: #036 ; }
 .rss          { font-family: 'Pacifico', arial, serif; margin-right: 1.2em;
                 margin-bottom: 1em; font-size: 1.2em; }
