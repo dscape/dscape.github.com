@@ -1,0 +1,53 @@
+---
+layout: post
+title: Haskell $
+---
+
+# Haskell $
+
+I was on the train with João and I was delighted to see my old friend $. I also miss composite (.) but $ is really the coolest shortcut Haskell gives a developer. So what is $?
+
+It’s defined as:
+
+     f ($) x = f x
+
+What does it does?
+
+     Prelude> let f x = map (succ) $ filter ( < 5 ) x
+     Prelude> f [4,5,7]
+     [5]
+     Prelude> let f  = zipWith ($)
+     Prelude> f [succ,id] [5,4]
+     [6,4]
+
+In the first example we filter a list for numbers that are inferior to five and then we apply succ function to it. That is, we add one. Without $ we would have:
+
+     Prelude> let f x = map (succ) (filter ( < 5 ) x)
+     Prelude> f [4,5,7]
+     [5]
+
+So we got the parenthesis off and that always great to help make the code more readable. At least I simply love this symbol. The first sample is quite more complex. First off all because it is in point-free/point-less notation. zipWith is a function that receives two lists and applies then function provided pair by pair. Like if I want to add [1,2,3] and [3,2,1] I can:
+
+     Prelude> zipWith (+) [1,2,3] [3,2,1]
+     [4,4,4]
+
+Ain’t it cool? So in this function we simply apply function that goes in the first list (id and succ) to the numbers in the second. Looks easy like this doesn’t it? ;) If it doesn’t just to read it and digest it and you’ll figure it out easily.
+
+Let code the same samples in Ruby. Unfortunately zipWith (should I commit it? :P) doesn’t exist in ruby I’ll have to work with another sample using plain zip (it’s the same as zipWith (\a b -> [a]++[b])).
+
+     irb(main):001:0> [1,2,3].zip([3,2,1])
+     => [[1, 3], [2, 2], [3, 1]]
+
+Well ruby handles this pretty well without $. We just need to do:
+
+     irb(main):002:0> [1,2,3].zip [3,2,1]
+
+Because it’s object oriented this kind of issues don’t exist in Ruby. There are no expressions with large number of parenthesis as well. despite this I must agree that the Haskell version is far more readable than the ruby one:
+
+     irb(main):003:0> [4,5,7].select {
+       |i| i < 5
+     }.map { |i| i.succ }
+     => [5]
+
+But I still miss $.I miss coding in Haskell. It’s just plain fun.
+I hope that I have helped you see why languages like Haskell and Scheme do matter, and others like Python and Ruby can be both useful and fun to work with!
