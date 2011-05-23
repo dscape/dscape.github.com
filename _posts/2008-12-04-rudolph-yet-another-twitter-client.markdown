@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Rudolph: Yet another Twitter client
+title: Rudolph; Yet another Twitter client
 ---
+
 # Rudolph: Yet another Twitter client
 
 ![Rudolph Twitter Client](http://img.skitch.com/20081204-d7dbe2g88dmnk2ubwt9ec4i18a.png)
