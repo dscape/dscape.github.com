@@ -1,8 +1,8 @@
 ---
 layout: post
-title: RSA Encrypt & Decrypt in ruby
+title: RSA Encrypt & Decrypt in Ruby
 ---
-# RSA Encrypt & Decrypt in ruby
+# RSA Encrypt & Decrypt in Ruby
 
 Well I finished the encrypt with RSA on ruby some hours ago and felt like 
 [sharing](http://github.com/dscape/rudolph/tree/e94b7f106afe862cd99e842dc11d698a5117a64a/src/rudolph/crypt.rb). :)
