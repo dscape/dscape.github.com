@@ -5,9 +5,11 @@ title: Mondrian Multidimensional K-Anonymity in Ruby
 
 # Mondrian Multidimensional K-Anonymity in Ruby
 
-![Mondrian](https://skitch.com/dscape/fy3p8/google-image-result-for-http-3.bp.blogspot.com-jigub9ny8ny-s9naadd4toi-aaaaaaaaafq-yyftwawcxtc-s400-400px-mondrian-lookalike.svg.png)
+![Mondrian](https://img.skitch.com/20110523-fr6wmkne1mddrnu26iydfcmdc.png)
 
-An implementation of this paper: [Mondrian Multidimensional K-Anonymity](http://mr.zare.ma.googlepages.com/36MondrianMultidimensionalK-Anonymit.pdf)
+An implementation of this paper: [Mondrian Multidimensional K-Anonymity](http://mr.zare.ma.googlepages.com/36MondrianMultidimensionalK-Anonymit.pdf).
+
+You can also get the code from [github](https://github.com/dscape/mondrian-multidimensional-k-anonymity-).
 
       # ==================================================================================
       # anonymization: group.rb
