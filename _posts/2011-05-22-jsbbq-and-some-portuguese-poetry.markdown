@@ -9,10 +9,10 @@ Attended [jsbbq](http://jsbbq.org) yesterday. It was fun, Mikeal does a great jo
 
 Just finished translating another portuguese poem, this time by Fernando Pessoa:
 
-To be great, be whole; 
-Exclude nothing, exaggerate nothing that is not you. 
-Be whole in everything. Put all you are 
-Into the smallest thing you do. 
-So, in each lake, the moon shines Because it blooms up above.
-
-Ricardo Reis, Odes
+     To be great, be whole; 
+     Exclude nothing, exaggerate nothing that is not you. 
+     Be whole in everything. Put all you are 
+     Into the smallest thing you do. 
+     So, in each lake, the moon shines Because it blooms up above.
+     
+     Ricardo Reis, Odes
