@@ -35,6 +35,6 @@ If you are curious about the talk you can get some related materials at [lanyrd]
 
 ## Thank you!
 
-The event went extremely well. No problems with schedule, internet worked great, speakers were awesome and very friendly to interact (hopefully I did ok too), and there was an overall good positive vibe in the room! Because organizing an event like this is no easy task, a sincere thank you for such a great event to Simon, Sylvia, Julia, Isabel and Jan.
+The event went extremely well. No problems with schedule, internet worked great, speakers were awesome and very friendly to interact (hopefully I did ok too), and there was an overall good positive vibe in the room! Because organizing an event like this is no easy task, a sincere thank you for such a great event to [Simon](https://twitter.com/s1m0nw), Sylvia, Julia, [Isabel](http://twitter.com/MaineC) and [Jan](https://twitter.com/janl).
 
 So next year don't forget to [register](http://berlinbuzzwords.de/) and pay Berlin a visit!
