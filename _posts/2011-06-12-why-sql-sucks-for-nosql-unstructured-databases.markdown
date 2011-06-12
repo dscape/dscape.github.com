@@ -19,7 +19,7 @@ In this post I'll focus on some lessons learned about mixing the worlds of relat
 
 But be warned: things will get messy. SQL isn't pretty and it's about to collide with the awesome unstructured truck _(Slightly biased)_!
 
-![Calvin and Hobbes](img/calvin-mess.gif)
+![Calvin and Hobbes](/images/calvin-mess.gif)
 
 ## Data Model
 
