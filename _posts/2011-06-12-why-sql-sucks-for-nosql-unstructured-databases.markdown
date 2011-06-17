@@ -88,20 +88,20 @@ Someone once referred to me (talking about SQL/XML) as those Frankenqueries. The
 Let's imagine two shopping lists, one for Joe and one for Mary
 
       marys-shopping.json
-      "fruit": {
-        "apples": 2,
-        "apples": 5
-      }
+      { "fruit": {
+        "apples": 2
+      }, "apples": 5 }
+      
       
       joes-shopping.json
-      "fruit": {
+      { "fruit": {
         "apples": 6,
         "oranges": 1
-      }
+      } }
 
 Now with my "make believe" SQL/JSON-ish extension I do:
 
-      SELECT $lists.fruit.apples
+      SELECT apples
       FROM LISTS
 
 What does this return? Remember RowSet goes in, RowSet comes out?
