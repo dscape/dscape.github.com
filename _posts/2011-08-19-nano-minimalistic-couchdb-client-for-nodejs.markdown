@@ -26,16 +26,10 @@ You can install nano using [npm][8]:
 
 If you don't have CouchDB installed I would recommend using [Iris Couch][5]. You can sign up in less than a minute and you will have your CouchDB up and running. 
 
-Now we need to setup what CouchDB server we want to connect to:
-
-     vi couch.cfg.js
-     module.exports = { url: "http://localhost:5984" };
-
 Now we can give nano a try:
 
      node
-     var cfg = require('./couch.cfg');
-     var nano = require('nano')(cfg);
+     var nano = require('nano')('http://localhost:5984');
 
 One cool thing about nano is that you don't have to learn about errors: they are proxied directly from CouchDB. So if you knew them in CouchDB, you know them in nano. The only error nano introduces is a socket error, meaning the connection to CouchDB failed.
 
@@ -44,7 +38,7 @@ This makes it super easy for someone that knows CouchDB to use nano.
 One common pattern I see in people developing CouchDB centric applications is lazy creation of databases. In other words you try to create a document, if the database doesn't exist then you create a database and retry. Let's see how that would work in nano:
 
       var cfg = require('./couch.cfg');
-      var nano = require('nano')(cfg);
+      var nano = require('nano')('http://localhost:5984');
       var db_name = "test";
       var db = nano.use(db_name);
       
@@ -75,8 +69,7 @@ If you are an absolute beginner in nodejs there's two things here that might con
 
 Because nano is minimalistic it doesn't try to support every single thing you can do in CouchDB. The way nano allows you to extend that functionality is by using the `request` method:
 
-      var cfg = require('./couch.cfg');
-      var nano = require('nano')(cfg);
+      var nano = require('nano')('http://localhost:5984');
       nano.request({db: "_uuids"}, function(_,_,uuids){ console.log(uuids); });
 
 ## Hello Pipe!
@@ -89,8 +82,7 @@ Let's try to use nano to pipe something from CouchDB using the [express][7].
 We need something we can pipe out, so let's pipe the nodejs logo into couchdb:
 
       node
-      var cfg = require('./couch.cfg');
-      var nano = require('nano')(cfg);
+      var nano = require('nano')('http://localhost:5984');
       var request = require('request');
 
       var db_name = "test";
@@ -107,8 +99,7 @@ What if instead we want to pipe the attachment from CouchDB to the end user?
 
       vi index.js
       var express = require('express')
-        , cfg     = require('./couch.cfg')
-        , nano    = require('nano')(cfg)
+        , nano    = require('nano')('http://localhost:5984')
         , app     = module.exports = express.createServer()
         , db_name = "test"
         , db      = nano.use(db_name);
