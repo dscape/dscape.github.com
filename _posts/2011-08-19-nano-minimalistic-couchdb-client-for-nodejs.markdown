@@ -75,6 +75,8 @@ If you are an absolute beginner in nodejs there's two things here that might con
 
 Because nano is minimalistic it doesn't try to support every single thing you can do in CouchDB. The way nano allows you to extend that functionality is by using the `request` method:
 
+      var cfg = require('./couch.cfg');
+      var nano = require('nano')(cfg);
       nano.request({db: "_uuids"}, function(_,_,uuids){ console.log(uuids); });
 
 ## Hello Pipe!
@@ -97,13 +99,12 @@ We need something we can pipe out, so let's pipe the nodejs logo into couchdb:
       // {} for empty body as parameter is required but will be piped in
       request.get("http://nodejs.org/logo.png").pipe(
         db.attachment.insert("new", "logo.png", {}, "image/png")
-      )
+      );
 
 If you visit futon (i.e. `localhost:5984/_utils/`) you should be able to see the nodejs logo inside the `test` database, in document `new`, in an attachment called `logo.png`.
 
-Let's do the other way around and pipe the attachment from CouchDB to the end user:
+What if instead we want to pipe the attachment from CouchDB to the end user?
 
-      npm install express
       vi index.js
       var express = require('express')
         , cfg     = require('./couch.cfg')
@@ -121,7 +122,7 @@ Let's do the other way around and pipe the attachment from CouchDB to the end us
 
 Now go to your browser and visit `localhost:3333`. You should be able to see the nodejs logo!
 
-Hope you had fun following this little tutorial, feel free to ask questions in the comments!
+Hope you had fun following this little experiment -- feel free to ask questions in the comments!
 
 [1]: https://github.com/mikeal/request
 [2]: http://jsconf.eu/2010/speaker/nodejs_couchdb_crazy_delicious.html
