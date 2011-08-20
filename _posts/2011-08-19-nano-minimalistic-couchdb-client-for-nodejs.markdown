@@ -37,7 +37,6 @@ This makes it super easy for someone that knows CouchDB to use nano.
 
 One common pattern I see in people developing CouchDB centric applications is lazy creation of databases. In other words you try to create a document, if the database doesn't exist then you create a database and retry. Let's see how that would work in nano:
 
-      var cfg = require('./couch.cfg');
       var nano = require('nano')('http://localhost:5984');
       var db_name = "test";
       var db = nano.use(db_name);
