@@ -112,7 +112,7 @@ What if instead we want to pipe the attachment from CouchDB to the end user?
 
 Now go to your browser and visit `localhost:3333`. You should be able to see the nodejs logo!
 
-Hope you had fun following this little experiment -- feel free to ask questions in the comments!
+Hope you had fun following this little experiment -- feel free to ask questions in the comments.
 
 [1]: https://github.com/mikeal/request
 [2]: http://jsconf.eu/2010/speaker/nodejs_couchdb_crazy_delicious.html
