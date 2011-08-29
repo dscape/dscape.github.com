@@ -30,6 +30,23 @@ Now we can give nano a try:
 
      node
      var nano = require('nano')('http://localhost:5984');
+     nano;
+     // { db: 
+     //  { create: [Function: create_db],
+     //    get: [Function: get_db],
+     //    destroy: [Function: destroy_db],
+     //    list: [Function: list_dbs],
+     //    use: [Function: document_module],
+     //    scope: [Function: document_module],
+     //    compact: [Function: compact_db],
+     //    replicate: [Function: replicate_db],
+     //    changes: [Function: changes_db] },
+     // use: [Function: document_module],
+     // scope: [Function: document_module],
+     // request: [Function: relax],
+     // config: { url: 'http://localhost:5984' },
+     // relax: [Function: relax],
+     // dinosaur: [Function: relax] }
 
 One cool thing about nano is that you don't have to learn about errors: they are proxied directly from CouchDB. So if you knew them in CouchDB, you know them in nano. The only error nano introduces is a socket error, meaning the connection to CouchDB failed.
 
@@ -37,6 +54,7 @@ This makes it super easy for someone that knows CouchDB to use nano.
 
 One common pattern I see in people developing CouchDB centric applications is lazy creation of databases. In other words you try to create a document, if the database doesn't exist then you create a database and retry. Let's see how that would work in nano:
 
+      // don't forget to add your credentials if you are not in admin party mode!
       var nano = require('nano')('http://localhost:5984');
       var db_name = "test";
       var db = nano.use(db_name);
@@ -81,11 +99,9 @@ Let's try to use nano to pipe something from CouchDB using the [express][7].
 We need something we can pipe out, so let's pipe the nodejs logo into couchdb:
 
       node
-      var nano = require('nano')('http://localhost:5984');
+      // alias for require('nano')('http://localhost:5984').use('test');
+      var db      = require('nano')('http://localhost:5984/test');
       var request = require('request');
-
-      var db_name = "test";
-      var db = nano.use(db_name);
 
       // {} for empty body as parameter is required but will be piped in
       request.get("http://nodejs.org/logo.png").pipe(
