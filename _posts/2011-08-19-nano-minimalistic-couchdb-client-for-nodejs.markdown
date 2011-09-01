@@ -61,7 +61,7 @@ One common pattern I see in people developing CouchDB centric applications is la
       
       function insert_doc(doc, tried) {
         db.insert(doc,
-          function (error,http_headers,http_body) {
+          function (error,http_body,http_headers) {
             if(error) {
               if(error.message === 'no_db_file'  && tried < 1) {
                 // create database and retry
@@ -87,7 +87,7 @@ If you are an absolute beginner in nodejs there's two things here that might con
 Because nano is minimalistic it doesn't try to support every single thing you can do in CouchDB. The way nano allows you to extend that functionality is by using the `request` method:
 
       var nano = require('nano')('http://localhost:5984');
-      nano.request({db: "_uuids"}, function(_,_,uuids){ console.log(uuids); });
+      nano.request({db: "_uuids"}, function(_,uuids){ console.log(uuids); });
 
 ## Hello Pipe!
 
