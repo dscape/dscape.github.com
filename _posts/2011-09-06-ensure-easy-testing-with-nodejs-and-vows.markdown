@@ -30,7 +30,9 @@ This was the idea for [ensure][3] - vows without all the other stuff I didn't ca
 
 You define a test on a property and give it a `name`. Then the convention is the callback will be in `name_ok`. e.g. If you have test `foo` the callback will be `foo_ok`. That's it.
 
-One thing I noticed in all test frameworks I tried was that I was constantly commenting other tests to isolate and run a single test. This is cumbersome and causes some [faulty commits][2]. I had the same problem in `ensure` so decided to tackle it. When calling `ensure` you can pass a comma separated argument which says which tests you want to run (by default `ensure` runs all tests). So if I want to execute tests in `foo.js` named `bar` and `baz` I would:
+Another pattern I identified was constantly commenting other tests to when I needed to isolate and run a single test. This is cumbersome and causes some [faulty commits][2]. 
+
+I had the same problem in `ensure` so decided to tackle it. When calling `ensure` you can pass a comma separated argument which says which tests you want to run (by default `ensure` runs all tests). So if I want to execute tests in `foo.js` named `bar` and `baz` I would:
 
       # this will only run tests bar and baz
       node foo.js bar,baz
@@ -39,7 +41,7 @@ This is super useful, e.g. in `nanocouch` I frequently want to see verbose outpu
 
       NANO_ENV=testing node tests/att/get.js att_get
 
-Which would run the `att_get` test with verbose output. If you are curious about how real life tests would look like you can look at [nuvem's][6] (MarkLogic node.js client) tests.
+Which would run the `att_get` test with verbose output. If you are curious about how real life tests would look like you can look at [nuvem][6] (MarkLogic node.js client).
 
 [1]: http://vowsjs.org/
 [2]: https://github.com/dscape/nuvem/commit/55adcd418c03d0b25308ca2a3b31a7f7677de27d#L1R11
