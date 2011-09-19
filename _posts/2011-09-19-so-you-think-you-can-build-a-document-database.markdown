@@ -19,7 +19,12 @@ With MarkLogic you can have transactions (indexes will be available right after 
 
 In Berlin I got the chance to introduce our architecture in a session named "ACID Transactions at the PB Scale with MarkLogic Server". I invite you all to watch it and challenge me with your questions.
 
-<iframe src="http://player.vimeo.com/video/26777627?byline=0&amp;portrait=0&amp;color=c9ff23" width="601" height="338" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe><p><a href="http://vimeo.com/26777627">Nuno Job ACID TRANSACTIONS AT THE PB SCALE WITH MARKLOGIC SERVER</a> from <a href="http://vimeo.com/user7393055">ntc GmbH</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+<iframe src="http://player.vimeo.com/video/26777627?byline=0&amp;portrait=0&amp;color=c9ff23" width="601" height="338" frameborder="0" webkitAllowFullScreen allowFullScreen>
+  
+</iframe>
+<a href="http://vimeo.com/26777627">
+Nuno Job ACID TRANSACTIONS AT THE PB SCALE WITH MARKLOGIC SERVER
+</a>
 
 If afterwards you feel like you wish you knew (even more) about how MarkLogic works feel free to check the [Inside MarkLogic Server][1] white-paper!
 
