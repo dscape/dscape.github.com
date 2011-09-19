@@ -15,7 +15,7 @@ Other document databases like CouchDB create something like serialized views of 
 
 In MarkLogic we pride ourselves in having a high throughput, ACID compliant, fast ad-hoc query engine supported by both indexes that look like a search engine and in range indexes (which are more common in relational-land). 
 
-With MarkLogic you can have transactions (indexes will be available right after you create them, plus consistency and durability), high throughput and can reach clusters that scale up to PBs.
+With MarkLogic you can have transactions (indexes will be available right after you create them, plus consistency and durability), high throughput and clusters that scale up to PBs.
 
 In Berlin I got the chance to introduce our architecture in a session named "ACID Transactions at the PB Scale with MarkLogic Server". I invite you all to watch it and challenge me with your questions.
 
