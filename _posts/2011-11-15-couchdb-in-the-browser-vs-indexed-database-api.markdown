@@ -25,6 +25,6 @@ I for once would just vote for putting CouchDB in the browser and standardize it
 
 I would love to hear why this is such a terrible idea. Base the standard on something that works today and modify it accordingly to what the browser needs?
 
-*PS* I have no interest in contributing to confusion or instigate anyone. My solo intention is to have this shit running before I have grey hair and look like Jack Nicholson. If you are looking for trolling I suggest you look somewhere else.
+*PS* I have no interest in contributing to confusion or instigate anyone. My sole intention is to have this shit running before I have grey hair and look like Jack Nicholson. If you are looking for trolling I suggest you look somewhere else.
 
 [idb]: http://www.w3.org/TR/IndexedDB/
