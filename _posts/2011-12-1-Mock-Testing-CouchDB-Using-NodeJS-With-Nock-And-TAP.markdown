@@ -13,12 +13,10 @@ Then some weeks ago I started automating the tests using [travis]. And builds st
 
 By the way Travis is super cool. You should test all your node.js libraries with it. All you need to do is go to the site, sign in with github and place a `.travis.yml` file like this one in the root of your lib:
 
-```
-language: "node_js"
-node_js:
-  - 0.4
-  - 0.6
-```
+      language: "node_js"
+      node_js:
+        - 0.4
+        - 0.6
 
 ## Enter Nock
 
