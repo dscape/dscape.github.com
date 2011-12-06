@@ -81,6 +81,8 @@ One thing this index does not give you is `what are the locations that belong to
 		<td> A         </td>
 		<td> 3     </td>
 		<td> Australia, Canada, Portugal </td>
+	</tr>
+	<tr>
 		<td> B         </td>
 		<td> 3     </td>
 		<td> Canada, Portugal, Togo </td>
