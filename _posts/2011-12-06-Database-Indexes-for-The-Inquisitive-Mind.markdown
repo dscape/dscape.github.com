@@ -15,12 +15,38 @@ If you are curious about MarkLogic you can always check the [Inside MarkLogic][i
 
 The most frequent type of indexes in a database are `range indexes`. They allow you to do really fast order bys, count, aggregates, etc. Let's think about a `location` index. I can define a index that says if a document contains a `json property` called `local` then add that property to a range index called `location` treating that value as a string 
 
-| Index     | Count | Documents |
-| Algeria   | 2     | C,D       |
-| Australia | 1     | A         |
-| Canada    | 5     | A,B,C,D,E |
-| Portugal  | 3     | A,B,C     |
-| Togo      | 5     | B,C,D,E,F |
+<table>
+	<tr>
+		<td> Index     </td>
+		<td> Count </td>
+		<td> Documents </td>
+	</tr>
+	<tr>
+		<td> Algeria   </td>
+		<td> 2     </td>
+		<td> C,D       </td>
+	</tr>
+	<tr>
+		<td> Australia </td>
+		<td> 1     </td>
+		<td> A         </td>
+	</tr>
+	<tr>
+		<td> Canada    </td>
+		<td> 5     </td>
+		<td> A,B,C,D,E </td>
+	</tr>
+	<tr>
+		<td> Portugal  </td>
+		<td> 3     </td>
+		<td> A,B,C     </td>
+	</tr>
+	<tr>
+		<td> Togo      </td>
+		<td> 5     </td>
+		<td> B,C,D,E,F </td>
+	</tr>
+</table>
 
 This means that document C and D have `local` Algeria and so on. So now I can ask the database to `give me the list of countries by first letter (including frequencies)`:
 
@@ -45,11 +71,31 @@ Same technique can be used for sorting documents, and executing fast aggregates,
 
 One thing this index does not give you is `what are the locations that belong to document A`. This would be an equivalent of a full table scan. So you can create the other way around, meaning associate documents with the locations they have. For this example that would be:
 
-| Document  | Count | Locations |
-| A         | 3     | Australia, Canada, Portugal | 
-| B         | 3     | Canada, Portugal, Togo |
-| C         | 4     | Algeria, Canada, Portugal, Togo |
-| D         | 3     | Algeria, Canada, Togo |
+<table>
+	<tr>
+		<td> Document  </td>
+		<td> Count </td>
+		<td> Locations </td>
+	</tr>
+	<tr>
+		<td> A         </td>
+		<td> 3     </td>
+		<td> Australia, Canada, Portugal </td>
+		<td> B         </td>
+		<td> 3     </td>
+		<td> Canada, Portugal, Togo </td>
+	</tr>
+	<tr>
+		<td> C         </td>
+		<td> 4     </td>
+		<td> Algeria, Canada, Portugal, Togo </td>
+	</tr>
+	<tr>
+		<td> D         </td>
+		<td> 3     </td>
+		<td> Algeria, Canada, Togo </td>
+	</tr>
+</table>
 
 Now it's fairly trivial to say the locations for document A isn't it? :) So just create this by omission when your use asks for a range index on location and he can have both. :)
 
@@ -71,12 +117,32 @@ And we can just go on adding constraints. The cool thing about it is that with a
 
 A inverted index looks a lot like a hash table. You hash the word and place it in a hash table. Then, like in the range index, you keep an array of the document that match that term. Unlike the range index the inverted index is hashed, thus not ordered. Unlike the range index the inverted index is not lean and indexes every single word it find in a document.
 
-| Term     | Term List |
-| red      | C         |
-| blue     | A,B       |
-| black    | A         |
-| run      | A         |
-| running  | B,C       |
+<table>
+	<tr>
+		<td> Term     </td>
+		<td> Term List </td>
+	</tr>
+	<tr>
+		<td> red      </td>
+		<td> C         </td>
+	</tr>
+	<tr>
+		<td> blue     </td>
+		<td> A,B       </td>
+	</tr>
+	<tr>
+		<td> black    </td>
+		<td> A         </td>
+	</tr>
+	<tr>
+		<td> run      </td>
+		<td> A         </td>
+	</tr>
+	<tr>
+		<td> running  </td>
+		<td> B,C       </td>
+	</tr>
+</table>
 
 This is a hash table, unordered and you don't have access to the keys. If you ask for words started with B this index is useless, you can only find things after running them thru the hash function. However this makes things like stemming super easy. When hashing you can coalesce words like run, running, ran to the same hash. This mean you can understand these words are the same for the purpose of the search directly out of the index. Actually if you stem terms before hashing them you loose the ability to distinguish if the word was run or running.
 
@@ -107,24 +173,73 @@ There's something wrong with me, I'm a cuckoo
 
 If you use a normal inverted index you can find document that have the word "something", documents that have the word "wrong", and documents that have the word "with". But loads of those documents that do have all those terms won't have the sentence. In an ideal world, for this search, you would be grouping terms 3 by 3 to power this search:
 
-| Term | Term List |
-| There's something wrong | A |
-| something wrong with | A |
-| wrong with me | A |
-| with me im | A |
-| me im a | A |
-| im a cuckoo | A |
+<table>
+	<tr>
+		<td> Term </td>
+		<td> Term List </td>
+	</tr>
+	<tr>
+		<td> There&#8217;s something wrong </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> something wrong with </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> wrong with me </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> with me im </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> me im a </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> im a cuckoo </td>
+		<td> A </td>
+	</tr>
+</table>
 
 Now if I did that search I wouldn't find any false positives in the index, which means smaller query granularity, which normally translates to a faster query. However with this index you can't search for two word phrases. So the default in most search indexes is to index phrases by grouping words two by two.
 
-| Term | Term List |
-| There's something | A |
-| something wrong | A |
-| wrong with | A |
-| with me | A |
-| me Im | A |
-| Im a | A |
-| a cuckoo | A |
+<table>
+	<tr>
+		<td> Term </td>
+		<td> Term List </td>
+	</tr>
+	<tr>
+		<td> There&#8217;s something </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> something wrong </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> wrong with </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> with me </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> me Im </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> Im a </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> a cuckoo </td>
+		<td> A </td>
+	</tr>
+</table>
 
 If you find for sentences that are more than two words you can still have false positives but the query granularity is probably much better and will likely work.
 
@@ -141,19 +256,58 @@ So why all this now? In the universal index you augment the inverted index with 
 
 would produce the following index:
 
-| Term | Term List | 
-| Word:github | A |
-| Word:Social | A |
-| Word:Coding | A |
-| Word:Done   | A |
-| Word:Right  | A |
-| Property:name->github | A |
-| Property:descrition->social coding done right | A |
-| Property:owner->Pedro | A |
-| Hierarchical:root.site1 | A |
-| Hierarchical:root.site1.name | A |
-| Hierarchical:root.site1.description | A |
-| Hierarchical:root.owner | A |
+<table>
+	<tr>
+		<td> Term </td>
+		<td> Term List </td>
+		<td> Word:github </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> Word:Social </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> Word:Coding </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> Word:Done   </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> Word:Right  </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> Property:name-&#62;github </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> Property:descrition-&#62;social coding done right </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> Property:owner-&#62;Pedro </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> Hierarchical:root.site1 </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> Hierarchical:root.site1.name </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> Hierarchical:root.site1.description </td>
+		<td> A </td>
+	</tr>
+	<tr>
+		<td> Hierarchical:root.owner </td>
+		<td> A </td>
+	</tr>
+</table>
 
 And now we can answer super complicated questions like "give me documents that have the word github but not the term red that are owned by pedro and are named github".
 
