@@ -3,6 +3,8 @@ layout: post
 title: Database Indexes for The Inquisitive Mind
 ---
 
+# Database Indexes for The Inquisitive Mind
+
 I've used to be a developer advocate an awesome database product called [MarkLogic][dmc], a NoSQL Document Database for the Enterprise. Now it's pretty frequent that people ask me about database stuff.
 
 In here I'm going to try to explain some fun stuff you can do with indexes. Not going to talk about implementing them but just about what they solve.
