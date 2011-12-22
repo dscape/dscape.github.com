@@ -131,7 +131,7 @@ Post-Hoc Tests with Scheffe correction revealed that the execution times of the 
 ![Table 2](http://writings.nunojob.com/images/clarinet-table2.png "Table 2")
 ![Figure 2](http://writings.nunojob.com/images/clarinet-figure2.png "Figure 2 Big")
 
-The differences between the execution times of `clarinet, `JSON.parse`, and `jsonparse` were also statistically significant for the "small" documents (F(2,57) = 36.95, p = .000).
+The differences between the execution times of `clarinet`, `JSON.parse`, and `jsonparse` were also statistically significant for the "small" documents (F(2,57) = 36.95, p = .000).
 
 Post-Hoc Tests with Scheffe correction revealed that the execution times of the modules were once again statistically different between the three of them (see Table 3 and Fig. 3).
 
