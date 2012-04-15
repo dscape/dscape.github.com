@@ -7,7 +7,7 @@ title: How do you stop your best people from leaving your team?
 
 I have the privilege to work with a [lot][charlie] [of][ana] [great][paolo] [individuals][mikeal]. Lot has been said about [managing] people this new wave of talented, [creative], and extremely ambitious individuals.
 
-It's not easy, we are the a generation of people that love what they do and are extremely good at doing what we do. I don't think a generation ever worked as hard as we do, and we think about things that employees historically where not used to think about: business, marketing, company vision &  values, branding, and messaging of our products. We think about that impacts our lives and how we can leverage the rules that exist in our world to create better products that have a social impact. 
+It's not easy, we are the a generation of people that love what they do and are extremely good at doing what we do. I don't think a generation ever worked as hard as we do, and we think about things that employees historically where not used to think about: business, marketing, company vision &  values, branding, and messaging of our products. We think about how that impacts our lives and how we can leverage the rules that exist in our world to create better products that have a social impact. 
 
 That's why we care about concepts like open-source, and we try crazy hard to monetize these concepts which are both fair and allow for sustainable progress. It's not always an easy battle, but that was the topic of my [JSConf talk this year][talk], so you should check the transcript out when we publish it in the Nodejitsu blog.
 
