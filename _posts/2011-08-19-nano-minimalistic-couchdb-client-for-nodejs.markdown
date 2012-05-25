@@ -105,7 +105,7 @@ We need something we can pipe out, so let's pipe the nodejs logo into couchdb:
 
       // {} for empty body as parameter is required but will be piped in
       request.get("http://nodejs.org/logo.png").pipe(
-        db.attachment.insert("new", "logo.png", {}, "image/png")
+        db.attachment.insert("new", "logo.png", null, "image/png")
       );
 
 If you visit futon (i.e. `localhost:5984/_utils/`) you should be able to see the nodejs logo inside the `test` database, in document `new`, in an attachment called `logo.png`.

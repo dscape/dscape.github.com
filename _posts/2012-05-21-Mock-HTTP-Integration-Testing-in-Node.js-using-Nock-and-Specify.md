@@ -8,13 +8,13 @@ title: Mock HTTP Integration Testing in Node.js using Nock and Specify
 One of the big things in releasing [nano] 3 was updating the tests. I really wanted this release out before [LXJS] but I had a lot of requirements for the tests:
 
 * It should be possible to run all the tests with mocks on and off by simply switching a environment variable
-* Tests should be just as simple to read as any file in the `samples` directory
+* Tests should be as simple to read as any file in the `samples` directory
 * Tests shouldn't be cluttered with mock code
 * Mocks are not code - as such they should be specified in the `fixtures`
-* It should be possible to write setup and teardown stages for all tests, and they should always be executed regardless of other tests (even if they throw)
-* Tests throwing shouldn't prevent me from running other tests, especially if they are in a different file
-* You should run tests by doing `node tests/test-name.js` and not by executing an external library
-* Whatever runs the tests shouldn't hijack into `stdin`, `stderr`, or `stdout`
+* It should be possible to write setup and teardown stages for all tests, and they should always be executed regardless of other tests (especially if other tests throw)
+* Tests throwing shouldn't prevent other tests from running if they are in a separate file or unit
+* You should run tests by doing `node tests/test-name.js` and not by executing an external binary
+* Whatever runs the tests shouldn't hijack `stdin`, `stderr`, or `stdout`
 * Descriptions of what the tests do are optional and no specific testing paradigm should be enforced. Tests are tests
 * I should be able to specify what tests to run when executing the tests from the command line. e.g. `node my-test.js setup test1 test2` would run setup, then test1, then test2, but nothing else (including teardown)
 * Tests should support streaming
