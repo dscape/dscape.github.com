@@ -9,8 +9,8 @@ a:hover       { color: #00f; }
 a:link, a:visited { color: #000; }
 .rss a, .title a  { text-decoration: none ; }
 .title        { font-family: 'Special Elite', Times, serif; font-size: 3em; }
-.desc         { margin-top: 1em; margin-left: 1em; }
-.links        { padding: 1em; }
+.desc, .links { margin-top: 1em; margin-left: 1em; }
+.links        { padding: 0em 1em 1em 1em; }
 .footer       { margin-top: 2em; }
 a.extra       { color: #f00; }
 .disqus       { padding: 0.5em; }
