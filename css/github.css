@@ -9,6 +9,7 @@ pre code {
   color: #000;
   background: #f8f8ff;
   overflow-y: scroll;
+  font-family: 'Inconsolata', Courier, serif;
 }
 
 pre .comment,
