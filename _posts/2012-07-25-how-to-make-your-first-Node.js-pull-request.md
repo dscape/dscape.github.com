@@ -21,9 +21,9 @@ If it is create an issue about what you found. You should include:
 * A standalone .js source file that exemplifies the bug (i.e. should run on the node repl)
 * Try to minimize dependencies as much as possible (i.e. use only node core and the module you are creating the issue for)
 
-Now wait for the module owner to respond to you. He will either:
+Now wait for the module owner to respond to you. She will either:
 
-* Fix it, if he can/is willing to
+* Fix it, if she can/is willing to
 * Classify as invalid (wontfix) and explain why
 * Not reply
 * Ask for the standalone isolated test talked about above if you didn't produce it to start with
@@ -91,7 +91,7 @@ Now you need to run tests. When maintaining `nano` I normally do:
       npm test
       npm run nock_off
 
-If there's bugs (which happens about 80% of the time cause people forget to run tests) the module maintained will fix them. He will add fixtures, adds mocks (whatever it takes) and commit them. After all is working, docs are fixed, etc the module maintainer will add you to the contributors list and go on to publish a new version. Let's say this is version `0.0.2`
+If there's bugs (which happens about 80% of the time cause people forget to run tests) the module maintained will fix them. She will add fixtures, adds mocks (whatever it takes) and commit them. After all is working, docs are fixed, etc the module maintainer will add you to the contributors list and go on to publish a new version. Let's say this is version `0.0.2`
 
       git push
 
